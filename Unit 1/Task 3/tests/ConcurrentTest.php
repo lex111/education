@@ -29,6 +29,7 @@ class ConcurrentTest extends PHPUnit_Framework_TestCase {
             $http .= "Host: task3.unit1.ws-education.dev\r\n";
             $http .= "Connection: Close\r\n\r\n";
             fwrite($fp, $http);
+            fread($fp, 1);
             fclose($fp);
         }
         sleep(3);
