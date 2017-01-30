@@ -1,6 +1,7 @@
 <phpunit bootstrap="autoload.php">
     <testsuites>
         <testsuite name="task4">
+            <file>tests/ActiveRecordTest.php</file>
         </testsuite>
     </testsuites>
 </phpunit>
